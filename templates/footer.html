@@ -9,7 +9,7 @@
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="single-footer-widget mb-80">
                         <!-- Footer Logo -->
-                        <a href="#" class="footer-logo"><img src="{% static 'img/logo_FSK-01.png' %}" alt=""></a>
+                        <a href="{% url 'fsksalon:home' %}" class="footer-logo"><img src="{% static 'img/logo_FSK-01.png' %}" alt=""></a>
                         <!-- Social Info -->
                         <div class="social-info">
                             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -35,16 +35,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
                         <!-- Open Times -->
                         <div class="open-time">
-                            <li><a href="./index.html">- Hair</a></li>
-                            <li><a href="./about.html">- Beauty</a></li>
-                            <li><a href="./service.html">- Bridal & Groom</a></li>
-                            <li><a href="./portfolio.html">-Tattoo</a></li>
-                            <li><a href="./blog.html">-Nail Services</a></li>
-                            <li><a href="#">- Hair Dressing</a></li>
-                            <li><a href="#">- Beautician</a></li>
-                            <li><a href="#">- Professional Makeup</a></li>
-                            <li><a href="#">- Professional Makeup</a></li>
-                            <li><a href="#">- Groomging</a></li>
+                            <li><a href="{% url 'fsksalon:home' %}">- Home</a></li>
+                            <li><a href="{% url 'fsksalon:about' %}">- About us</a></li>
+                            <li><a href="{% url 'fsksalon:hair' %}">- Hair</a></li>
+                            <li><a href="{% url 'fsksalon:beauty' %}">- Beauty</a></li>
+                            <li><a href="{% url 'fsksalon:bridal' %}">-Briday & Grooming</a></li>
+                            <li><a href="{% url 'fsksalon:tattoo' %}">-Tattoo</a></li>
+                            <li><a href="{% url 'fsksalon:nail' %}">-Nail Services</a></li>
+                            <li><a href="{% url 'fsksalon:course' %}">- Courses </a></li>
                         </div>
 
                     </div>
